@@ -6,10 +6,10 @@ const Navbar = () => {
   return (
     <div className="py-5">
       <ul className="w-1/2 mx-auto flex justify-between items-center">
-        <div>
+        <div className="flex gap-8 items-center">
           <Link
             title="This is a public route"
-            className="text-xl mr-10 font-medium hover:underline hover:text-teal-400"
+            className="text-xl font-medium hover:underline hover:text-teal-400"
             href="/"
           >
             Home
@@ -20,6 +20,13 @@ const Navbar = () => {
             href="/feedback"
           >
             Feedback
+          </Link>
+          <Link
+            title="This is a private route"
+            className="text-xl font-medium hover:underline hover:text-teal-400"
+            href="/gallery"
+          >
+            Gallery
           </Link>
         </div>
         <UserButton afterSignOutUrl="" />
