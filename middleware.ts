@@ -19,7 +19,7 @@ export default authMiddleware({
       // return NextResponse.redirect(orgSelection)
     }
   },
-  publicRoutes: ["/"],
+  publicRoutes: ["/", "/gallery", "/blog"],
 });
 
 export const config = {
