@@ -68,6 +68,7 @@ const Page = () => {
         onChange={(e) => setValue(e)}
         modules={modules}
       />
+      <h1 className="my-10 text-center text-4xl underline">Output</h1>
       <div
         className="w-3/4 mx-auto"
         dangerouslySetInnerHTML={{ __html: value }}
